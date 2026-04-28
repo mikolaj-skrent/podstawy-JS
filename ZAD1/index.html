@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kosztów Paliwa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <h2>Kalkulator paliwa</h2>
+        
+        <label for="litry">Ilość litrów:</label>
+        <input type="number" id="litry" placeholder="Wpisz ilość litrów">
+
+        <div class="radio-group">
+            <input type="radio" name="rodzaj" id="benzyna" value="5" checked>
+            <label for="benzyna">Benzyna (5 zł/l)</label><br>
+            
+            <input type="radio" name="rodzaj" id="diesel" value="6">
+            <label for="diesel">Olej napędowy (6 zł/l)</label>
+        </div>
+
+        <button type="button" id="obliczBtn">Oblicz</button>
+        
+        <p id="wynik">Koszt paliwa: 0 zł</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
